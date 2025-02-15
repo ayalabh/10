@@ -8,6 +8,9 @@
                 font-weight: 400;
                 font-style: normal;
             }
+            .twix {
+                height: 400px;
+            }
         </style>
         <script>
             var nClicks=0
@@ -19,6 +22,7 @@
                 if (nClicks%2 == 1) {
                     document.getElementById('twix').src='opentwix.jpeg' 
                 }
+                document.getElementById('nClicks').innerHTML=nClicks
             }
         </script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +34,9 @@
         twix is good
        </div> 
        <div>
-        <img src="twix.webp" id="twix" onclick="eatTwix()">
+        <img src="twix.webp" class="twix" id="twix" onclick="eatTwix()">
+       </div><div id="nClicks">
+        0
        </div>
     </body>
 </html>
