@@ -11,6 +11,12 @@
             .twix {
                 height: 400px;
             }
+            .cr {
+                font-family: "Modak", serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 50px;
+            }
         </style>
         <script>
             var nClicks=0
@@ -25,9 +31,9 @@
                 document.getElementById('nClicks').innerHTML=nClicks
             }
         </script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=League+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Script&family=Modak&display=swap" rel="stylesheet">
     </head>
     <body>
        <div class="big">
@@ -35,7 +41,7 @@
        </div> 
        <div>
         <img src="twix.webp" class="twix" id="twix" onclick="eatTwix()">
-       </div><div id="nClicks">
+       </div><div id="nClicks" class="cr">
         0
        </div>
     </body>
