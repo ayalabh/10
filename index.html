@@ -9,6 +9,18 @@
                 font-style: normal;
             }
         </style>
+        <script>
+            var nClicks=0
+            function eatTwix() {
+                nClicks=nClicks+1
+                if (nClicks%2 == 0) {
+                    document.getElementById('twix').src='twix.webp' 
+                }
+                if (nClicks%2 == 1) {
+                    document.getElementById('twix').src='opentwix.jpeg' 
+                }
+            }
+        </script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=League+Script&display=swap" rel="stylesheet">
@@ -18,7 +30,7 @@
         twix is good
        </div> 
        <div>
-        <img src="twix.webp">
+        <img src="twix.webp" id="twix" onclick="eatTwix()">
        </div>
     </body>
 </html>
